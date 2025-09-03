@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #a1d6e2;
+            }
+            .nav1{
+                background-color: #1995ad;
+                border: none;
+                padding:15px;
+                display:flex;
+                justify-content: center;
+
+            }
+            .nav1 a{
+                text-decoration: none;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+                color: rgb(41, 50, 58);
+                padding: 15px;
+                border-radius: 15px;
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 40px;
+                transition: 0.5s ease;
+            }
+            .nav1 a:hover{
+                background-color: #cee6f2;
+                transform: scale(1.1);
+            }
+            @media only screen and (max-width:728px){
+                .nav1{
+                    width:100%;
+                }
+                .nav1 a{
+                    display: inline-block;
+                    padding: 8 12px;
+                    font-size: 20px;
+                    margin-right: 15px;
+                    margin: 10px;
+                }  
+                .email span{
+                    font-size: 16px;
+                }   
+            }
+            .proto{
+                    background-color:#cee6f2;
+                 border-radius: 35px;
+                 padding: 30px;
+                 margin: 20px auto;  
+                 margin-top: 10px; 
+                 max-width: 400px;   
+                 width: 90%;         
+                 height: auto;       
+                    box-shadow: 0px 0px 5px 4px  rgba(41, 50, 58, 0.308);
+                transition: 0.5s ease-out;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+            .proto p{
+                  font-family: "Nunito", sans-serif;
+                font-optical-sizing: auto;
+                margin-top: 15px;
+            }
+            .proto img{
+                border: none;
+                width: 50px;
+                padding: 20px;
+                border-radius: 35px;
+            } 
+            .proto:hover{
+                transform: translateY(-10px);
+                 box-shadow: 0px 0px 5px 4px  rgb(41, 50, 58);
+            }
+            #contacts{
+                border-radius: 30px;
+                background-color: black;
+                padding: 15px;
+                margin: auto;
+                width: 150px;
+                color: antiquewhite;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 50px;
+            }
+            .email {
+                margin-top: 30px;
+                display: flex;
+                align-items: center;  
+                margin-right: 30px;   
+                font-size: 25px;           
+            }
+            .email img{
+             float: left;
+            width: 40px;
+            margin-right:15px ;
+            }
+            .instagram{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+            }
+            .instagram :hover{
+               box-shadow: 10px 10px 10px grey;
+               margin-right: 10px;
+               border-radius: 25px;
+            }
+            .instagram span{
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .instagram img:hover{
+                border-radius: 35px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="nav1">
+                <a href="#aboutme">about me</a>
+                <a href="myskills.html">my skills </a>
+                <a href="#myproject">my project </a>
+            </nav>
+        </header>
+        <main>
+            <br>
+            <div class="proto">
+                <h1>Hello Im A Web Devloper</h1>
+                <p>    Hello! I'm a passionate front-end web developer with a strong interest in creating beautiful and functional websites.  
+                     I specialize in HTML, CSS, and JavaScript, and I'm always learning new technologies to improve my skills.  
+                       I'm detail-oriented, creative, and enjoy turning ideas into interactive web experiences.  
+                     When I'm not coding, I enjoy reading, design, and exploring new tools in web development.</p>
+                <h1 id="contacts">contact me here </h1>
+              <h1 class="email"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACUCAMAAAAnDwKZAAABBVBMVEX////lOTVMr1AeiOX7wC3GKChRn+pwvXMOhORFrUlJrk0VhuVYnOlmuWru9+/oVT7NOjnnUE35uDP3/P97ru2cz53EHBz7viLQV1f8y1v++PjlNDDkKCPkLyrpZmPqbGnjHBXkqKjDFBTBAAD7uQD97+/nSETzraz3zMvxn5374+PrdHPvl5buj432xMMAfePx0NDglpb+89z947L93Jr+79HNS0vWcHD/+vD92Y78z23puLj94Kf+6cTvk4PnTzLCYnDtyV6XWobDuj17ca2ju1BUgM2rRWPcvjp1tVCjWHzRHgC+LDbtvzGUuVG0Rly4vEpreLqHxomjxvG73bjU5PmRvfDphPDaAAAD1UlEQVR4nO3ZeVPaQBgG8N0EWhXbejURNgsxyI0o3le1VWtrbautx/f/KN0EkWSzIZBNCDN9n/E/Mju/2ScvkQ1CEAgEAoFAIBAIBAKBQCAQCAQCgfwX2VrrdrtrzbiW297ZPdo93YtrOZaT/axmWZaWXd2KY7m9fEa3k8nvxLEcS+WgrGV70crdiuxyh0freqYXff34MBbhvpUdxFqVbHs73wc6yHwcRo+QbaR2IrPaju4W2kZ54ZpX6JRdiLoYKznDRT+VFVZWtSyfyGV7S46r6nrZJ7Q3MlLZO+t+YSaz/kmS2BURWTbGLrtwtiQAMuKRJPGAvxV7WaiSMb8it/C5mKgfSxIFt6JDXKS0Mc46DUI/BBBlZzqQiInRGvlrvNIyCJ44kWBsVOujLVKvGhinQsSU1EZZo0YoTouIsVkKLbtSMp1L0yJiYzGk7PqigdMlYkKGTnaD9C9Mj8jKbgU+D5st8/WyNInBZdcXKU6e+Fn8APQQ2VdkQ/A8LDQM90WBxC+SxDcXQqOXKJzs10keTtQv38oSZ640Qdc80V/2YJKHEfXM11l5onr97TaciInZdpVdaJv8BSKi/v1mLg5iTv1xy2+kn8g2cjDZzRa/hUKifqkoShxElqufVjgRU/pSdp1S/6c+ov7rtxIfMXd9dxtOxITaZRfaVPQhT7RLjpFol13WQolsI4uVSlG0hT6ifq84wtiIDOkpO4iIqfMXSmQl94BxElX1+q4cTsQk6AM3kZWsKAkQVfXC0kKJwXER7xUlIaJ6tWDJE18mOSHia9kSxP4kJ0Xsly1BdJecDFG9ylrRia5JTpDIyraiEp0n3gSIOVY2+x0dhciXnBSR5U+2OvYukvOlG77kBIkz821jTCOhZ+9EwqSIufnljhH0oBOGGp33kyaiZknwP2FQjFITTZ6IChujlk0M+zgyBSJCncD/arwl4459dSpE1CyOULZR7P1gSIco/BnFlWy2X36/pkRkZVeHlk2rnf6VqRG95zZ83Oc96RGHTHZvkqeAKDp56M2J94QiVSKbbEHZZtF7qJcuEaEaXzYx+KPRtIlssj1lG4NJnhoiqrjLNov+Y/r0ia5zbSJ8szUNRFQnTtkGFR4sTwXRfpFmH+KJ38VMBxEVaqZZC3gPPCVEVnbgq6KpIQYHiEAEIhCBCEQgxkhcSZ74V5L4sJk48VGS+JT0Ls4p7yWJ6FlkjJEovYkILc9v5pIjzknfiY7xWZ3xJRpx1hdFfg+dPD2s8HmOQESPH/k8St+HgyzziW9pCAQCgUAgEAgEAoFAIBAIBAKBQOTyDxl4lP1OgM1QAAAAAElFTkSuQmCC" ><span>mehdi.djou2018@gmail.com</span> </h1>
+                <a class="instagram" href="https://www.instagram.com/v2per_z?igsh=YW5pYW0ybzg5Z296" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAZlBMVEUAAAD////09PSysrKrq6v5+fnb29vGxsbPz8/V1dVDQ0OlpaUuLi6Pj4/h4eG1tbWWlpaEhIRVVVW/v7/q6upfX18oKCgODg5lZWVQUFAfHx+dnZ1JSUk0NDQVFRV7e3s8PDxycnLUNfYRAAAFFUlEQVR4nO1ca3eyMAzmqqAoFwVFZbL//yffub3SlBaa1tRxdvp82w4tD22apLnoeQ4ODg4ODg4Ofw5ddQ/TwBzHNLxXHSWjj93h6BPgeNidaBid6nVMwegH8bom4HRO6Bj9IDm/SKlNqSk9kLavcLoSbhxEcDWmtFnZofTAqjfj1Ab2OH0tltEW7mxSemCnz+lum5PvfxKsU7BP1nlohHyd7CXCoLlWrTBBUr5mJbqqFDWellxtRp913JKYh9N2ZK2CXmP0SBdEOmNn0Uf8zCv80Cs/8EZF6YEb/8FoLdpyevxwoeTkeZcDt4FYseLsXURL6QFuC1PcmLNlTiNWKJ/hBE/uwQYnz4M7mGAG1FDGyeSp6dtNNvx1gdKO8frW4Hmqc9fn34rvMGzVDbxkrR7/AY4elUDdA2FGIFbxh3ICYPSOPQ0nKBBPVj3Q7WoTCGRwS8Op38PD9nQNthqnqQNfQHQdKiAnP/k/6wnsiMrSV2A4DSePWyjffzIAmqdSzFCyR0siUjyngQF4010xQz48Gaj4G5J6ClXF3KNQMQOze/tM8SjAR/VZFkX52cpO94jU0wJ3bFtV9o/RR4pUU+8SoNriZFc3/BMj52z4ViZURzQphKL1vCyS3A1XEbfIvLvPpmWmI0CTUm20NxdngPGCC3SFYiapQHzRpJQ2poNWUsCaKZ8N+HfBxof0pC5AJcuxHVyMwQUO4OGnJ5WNVKIM+0Him+JhKOKI833JSZUSDhJA/SsYLWpS6DjDnANATCqSvV+OmVloSWnFY6bXipSUKE+r/Hq+ZdntfM1FXTpp1ylJZaOXxnkNFHhW5+OQZDMxESGpC68L4kg4VaeIp7WfuBIRkuJ1pjzO2/KbOOFW05HquddNyh1/PuXuLh0pzt4V0ke+wQVu5A4HGSkuzjDDacRKGi8gIwW9EIXFhjsodRipSHXgRcoYDpR2mWtNRYrN48fKaFerCAAQkWpW868ZAWzgSqJBiUiBoECMuD6fwFJJ4j1EpIAlRnjw0AuX2WUiUuDsofKbYGUl54+IFNsOmYyIyJgMxrZIXdiH5xhO3P6Jd2caUiAiM6vMGYBaFyMTNKRAtg2ZmwZWScyj0ZACLucGRwrEW0UHlIYUCMmh5JzzUsUN/8OkFrl9Lwm6GEL8wyphkcpzkWZmmQZ5ka7LIp28RbrD8OKgTpO/6eKgd8WCd0SbVyzTy6j0A37h2s5l+exe29EBDo6T5QCHWSiot0xq9LqJoBlfiGk9aDYOLwaLCC+KgdgQJviyOhwHYqeSmdZD1sV50zSbc/FbIetxTl+BNwX3OWujwow3QZ0wQq/VGxNGRqk1+6RwScj5IgIb6Vplfm2rqAizQOrL4swntnvVeBNSmBKAybr+FHFbNSkBQBVLdKGsWCJEVRmbFEvgy0pSWFaSCmUlU0jQpMwKcC7V/VGAc680qh01CnAslCpNQKNUyUJRl/pNqqIuC+VvE9Aof7NQKCiHTqGghZJKOXRKKm0Un8qgV3xqo0xXAr0yXe5mh4y36kOzoJmr9E2JWwme0C79fnuRPOqQL7GdYJmNF29tUVEn7Z/gm3lS0jNo2syzzLan9zWIaW1C5Y+RlJWG1ycie7mVbrLpMIyMEJI0Hb6lPVPl2+HWihYGjaycE20BZi2/lpujzZWfrTby2LyN3Ftmw723yJ8m8Cz8iAPRJYnw5y4Q/jgeXVXmr/wwSJDmL7Z8Ozg4ODg4ODgsE/8AJ7lEjYtbFwwAAAAASUVORK5CYII=" ><span>my instagram click here</span></a>
+            </div>
+        </main>
+    </body>
+</html>
